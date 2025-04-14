@@ -1,12 +1,15 @@
 "use strict";
 class Users {
     constructor() {
-        this.name = '';
+        this.name = "";
     }
-    // email:string'';
-    addUser(user) {
-        return `${user} is added`;
+    setName(name) {
+        this.name = name;
+    }
+    displayName() {
+        console.log(this.name);
     }
 }
-let UserNew = new Users();
-console.log(UserNew.addUser('John Doe'));
+const u1 = new Users();
+u1.setName("John");
+u1.displayName();

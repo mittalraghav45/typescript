@@ -1,15 +1,13 @@
 class Users{
-    name:string='';
-    addUser(user:string):string
-    {
-        return `${user} is added`
+    name:string="";
+    setName(name:string){
+        this.name=name;
     }
-
-    removeUser(user:string){
-        console.log(`${user} removed`)
+    displayName(){
+        console.log(this.name)
     }
 }
 
-let UserNew= new Users();
-console.log(UserNew.addUser('John Doe'));
-console.log(UserNew.removeUser('John Doe'));
+const u1= new Users();
+u1.setName("John");
+u1.displayName();
