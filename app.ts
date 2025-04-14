@@ -20,8 +20,12 @@
 // // }
 
 class Users{
-    constructor (){
+    constructor (public name:string,public email:string){
         console.log('constructor called')
     }
+    displayVal(){
+        console.log(this.name,this.email)
+    }
 }
-const u1=new Users();
+const u1=new Users('raghav','test@gmail');
+u1.displayVal();

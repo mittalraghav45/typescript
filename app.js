@@ -19,8 +19,14 @@
 // u1.getNameLength();
 // // }
 class Users {
-    constructor() {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
         console.log('constructor called');
     }
+    displayVal() {
+        console.log(this.name, this.email);
+    }
 }
-const u1 = new Users();
+const u1 = new Users('raghav', 'test@gmail');
+u1.displayVal();
